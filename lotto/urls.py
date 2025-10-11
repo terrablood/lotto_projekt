@@ -17,8 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app_hatos.views import kerdesek
+from app_hatos.views import elso
+from app_hatos.views import masodik
+from app_hatos.views import harmadik
+from app_hatos.views import negyedik
+from app_hatos.views import otodik
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('lekerdezesek', kerdesek),
+    path('elso', elso),
+    path('masodik', masodik),
+    path('harmadik', harmadik),
+    path('negyedik', negyedik),
+    path('otodik', otodik),
 ]
